@@ -1,0 +1,95 @@
+#container1{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 105vh;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.homepage{
+    background-color:rgb(255, 255, 255);
+    width: 77vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    
+    margin: auto;
+    margin-top: 70px;
+
+    
+
+}
+.lefthome{
+    width: 15px;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(83, 94, 225);
+    padding-top: 160px;
+    padding-left: 15px;
+    
+    
+
+}
+.centerhome{
+    width: 1fr;
+    line-height: 30px;
+    padding-top: 40px;
+    margin-left: 120px;
+
+}
+.self{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.course{
+    color: rgb(64, 60, 60);
+    padding-top: 30px;
+    font-size:23px ;
+    width: 350px;
+}
+.collage{
+     color:   rgb(78, 72, 72);
+     padding-top: 20px;
+     width: 300px;
+     line-height: 25px;
+     font-size: 17px;
+}
+.contactme{
+    width: 150px;
+    align-items: center;
+    color: white;
+    background-color: rgb(83, 94, 225);
+    margin-top: 40px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+.contactme:hover{
+    background-color: rgb(36, 46, 188) ;
+}
+.righthome{
+    width: 1fr;
+    object-position: center;
+    margin-left: 100px;
+    margin-top: 110px;
+}
+.righthome img{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 45%;
+}
+#scroll{
+    margin-top: 80px;
+    margin-left: 288px;
+    font-size: 15px;
+    display: inline-block;
+}
+#scroll:hover{
+    font-size: 17px;
+}
