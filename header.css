@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    
 }
 
 .Navbar{
@@ -16,34 +17,37 @@
     font-size: 17px;
 }
 .leftsection{
-    width: 250px;
+    width: 25%;
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     font-size: 17px;
     cursor: pointer;
+    white-space: nowrap;
 }
 .leftsection:hover{
     color:  rgb(83, 94, 225) ;
+
 }
 .centersection{
-   
+    width: 45%;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    flex: 1;
+    gap: 40px;
+    
     align-items: center;
-    justify-content: space-between;
+   
     margin-left: 150px;
+    white-space: nowrap;
 }
 .rightsection{
-    width: 100px;
+    width: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 20px;
+    justify-content: start;
+    margin-left: 0px;
     cursor: pointer;
 }
 .rightsection:hover{
@@ -54,5 +58,65 @@
     cursor: pointer;
 }
 .navkeys:hover{
- color:rgb(83, 94, 225)  ;
+ color:rgb(83, 94, 225)  
+
+}
+
+/* ============================================================================================================== */
+
+@media (max-width:768px) {
+
+    
+    .leftsection{
+        width: 30%;
+        margin-left: 60px;
+        font-size: 15px;
+    }   
+    .centersection{
+        width: 60%;
+        margin-left: 50px;
+        font-size: 13px;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        
+       
+    }
+    .rightsection{
+        width: 10%;
+        font-size: 13px;
+        margin-left: 20px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 1330px) and (min-width: 769px) {
+    .leftsection{
+        width: 30%;
+        margin-left: 20px;
+        font-size: 17px;
+    }   
+    .centersection{
+        width: 60%;
+        margin-left: 50px;
+        font-size: 15px;
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        
+       
+    }
+    .rightsection{
+        width: 10%;
+        font-size: 15px;
+
+        margin-left: 20px;
+       
+    }
+}
+@media (max-width: 660px) {
+    .centersection,.rightsection{
+        display: none;
+    }
 }

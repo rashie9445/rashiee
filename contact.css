@@ -1,10 +1,12 @@
-#container6{
+#container6 {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 120vh;
+    /* height: 120vh; */
     font-family: Arial, Helvetica, sans-serif;
-    }
-     .contact{
+    margin-bottom: 150px;
+}
+
+.contact {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -12,103 +14,133 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-.touch{
+
+.touch {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color:  rgb(78, 72, 72) ;  
+    color: rgb(78, 72, 72);
 }
-.contact-main{
-    width: 68%;
-    height: 90vh;
-     margin-top: 50px;
-    margin-left: 16%;
+
+.contact-main {
+    width: 100%;
+    /* height: 90vh; */
+    margin-top: 50px;
+    /* margin-left: 16%; */
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     gap: 30px;
+    /* padding: 10%; */
+}
+.contact-left{
+    width: 50%;
+      display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10%;
+    
+    
+
+}
+.contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-.left1{
-    width: 366px;
+.left1 {
+    /* width: 100%; */
     height: 50px;
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
-  
+    
+
 }
-.icon1{
+
+.icon1 {
     height: 50px;
     display: inline-block;
     display: flex;
     padding-top: 10px;
-    
+
 }
-.left2{
-    width: 366px;
+
+.left2 {
+    /* width: 100%; */
     height: 50px;
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
 }
-.icon2{
+
+.icon2 {
     height: 50px;
     display: inline-block;
     display: flex;
     padding-top: 8px;
-    
+
 }
-.left3{
-    width: 366px;
+
+.left3 {
+    /* width: 100%; */
     height: 50px;
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
 }
-.icon3{
+
+.icon3 {
     height: 50px;
     display: inline-block;
-     display: flex;
+    display: flex;
     padding-top: 8px;
-    
+
 }
-.d-icon-1{
-    line-height: 25px;
-}
-.d-icon-2{
-    line-height: 25px;
-}
-.d-icon-3{
+
+.d-icon-1 {
     line-height: 25px;
 }
 
-#name-box{
-    width: 380px;
+.d-icon-2 {
+    line-height: 25px;
+}
+
+.d-icon-3 {
+    line-height: 25px;
+}
+
+.name-box {
+    width: 75%;
     height: 78px;
     background-color: rgb(238, 238, 252);
     border-radius: 8px;
     color: rgb(106, 106, 124);
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     margin-bottom: 20px;
     padding-left: 20px;
-    
-    
+
+
 }
-#email-box{
-    width: 380px;
+
+.email-box {
+    width: 75%;
     height: 78px;
     background-color: rgb(238, 238, 252);
     border-radius: 8px;
     color: rgb(106, 106, 124);
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     margin-bottom: 20px;
     padding-left: 20px;
-    
+
 }
-#message-box{
-    width: 400px;
+
+.message-box {
+    width: 80%;
     height: 200px;
     background-color: rgb(238, 238, 252);
     border-radius: 8px;
@@ -116,25 +148,53 @@
     font-size: 17px;
     border: none;
     margin-bottom: 20px;
-     padding-left: 20px;
-     padding-top: 15px;
-     padding-right: 20px;
-     box-sizing: border-box;
-     font-family: Arial, Helvetica, sans-serif;
-     
-     
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
-#send-btn{
-    width: 180px;
+#send-btn {
+    width: 200px;
     height: 60px;
-    background-color: rgb(87, 87, 217) ;
+    background-color: rgb(87, 87, 217);
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 17px;
     cursor: pointer;
 }
-#send-btn:hover{
+
+#send-btn:hover {
     background-color: rgb(61, 61, 245);
 }
+
+/* ============================================================================================================= */
+
+@media(max-width:430px) {
+    .contact-left{
+        margin-left: 0px;
+    }
+   
+}
+@media(max-width:630px){
+    .contact-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .name-box,.message-box,.email-box{
+        width: 90%;
+    }
+
+   .contact-left,.contact-right{
+    width: 70%;
+    }
+    #send-btn {
+    width: 150px;
+    height: 50px;
+    }
+
+}   

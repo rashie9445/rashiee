@@ -1,7 +1,7 @@
 #container5{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 190vh;
+    /* height: 150vh; */
     font-family: Arial, Helvetica, sans-serif;
 
     }
@@ -20,34 +20,44 @@
     color:  rgb(78, 72, 72) ;  
 }
 .project-sheet{
-    width: 70%;
-    height: 100vh;
+    width: 100%;
+    /* height: 100vh; */
     background-color: rgb(254, 254, 254);
     border-radius: 8px;
-    position: relative;
-    left: 17%;
-    top: 5%;
+    /* position: relative; */
+    /* left: 17%; */
+    /* top: 5%; */
     display: flex;
-    gap: 25px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 55px;
+    margin-bottom: 200px;
+    
 }
 .sheet-left{
-    width: 50%; 
-    height: 130vh;
+    width: 30%; 
+    /* height: 80; */
     padding-top: 35px;
-    padding-left: 30px;
+    padding: 30px;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     line-height: 50px;
     display: inline-block;
     border-radius: 8px;
     background-color: rgb(235, 235, 252);
 
+    
+
 }
 .sheet-right{
-    width: 50%;
-    height: 100vh;
+    width: 30%;
+    /* height: 80vh; */
     padding-top: 35px;
-    padding-left: 35px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     line-height: 50px;
@@ -56,26 +66,75 @@
     background-color: rgb(235, 235, 252);
     
 }
-.em-photo img{
-    width: 350px;
-    height: 350px;
-    
-    padding-left: 10px;
+.em-photo{
+    width: 100%;
+    height: 300px;
+    background-image: url('Emegico.jpeg');
+    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.em-photo1{
+    width: 100%;
+    height: 300px;
+    background-image: url('Authfy\ login.png');
+    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .em-photo1 img{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+     margin-top: 20px;
+    /* height: 350px; */
 }
-.em-heading{
-    width: 400px;
+.em-heading {
+    /* width: 400px;     */
+
+    display: inline-block;
     
 }
 .em-desc{
-    width: 350px;
+   
      
     font-size: 15px;
     color:  rgb(78, 72, 72);
     display: inline-block;
     line-height: 25px;
 }
+/* ============================================================================================================== */
 
+@media (max-width:768px){
+     
+     .em-photo img{
+        width: 225px;
+        height: 230px;
+
+     }
+     .em-photo1 img{
+        width: 236px;
+        height: 290px;
+        
+     }
+     .em-heading{
+        font-size: 13px;
+  
+     }
+     .em-desc{
+       
+        font-size: 13px;
+        line-height: 20px;
+     }
+
+}
+@media(max-width:630px){
+    .project-sheet{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sheet-left,.sheet-right{
+        width: 50%;
+    }
+}

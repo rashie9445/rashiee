@@ -4,7 +4,10 @@ html{
 #container4{
      background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 150vh;
+    /* height: 180vh;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     font-family: Arial, Helvetica, sans-serif;  
  }       
@@ -33,22 +36,25 @@ html{
 
 }
 .edupage{
-    width: 68%;
-    height: 90vh;
+    width: 50%;
+    height: 100%;
     background-color: white;
     margin-top: 50px;
-    margin-left: 16%;
-    position: relative;
+    /* margin-left: 16%; */
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 60px;
+    /* position: relative; */
     box-shadow: 0 0 5px black;
     border-radius: 6px;
+    margin-bottom: 100px;
     
 }
 .school{
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    top: 80px;
-    left: 100px;
+    width: 40%;
+    height: 95%;
+    
     color: rgb(0, 0, 0);
     background-color: white;
     padding: 20px;
@@ -56,12 +62,14 @@ html{
     border-radius: 6px;
     border: 1px solid  rgb(0, 0, 0);
 }
+.hs-school{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 .high-school{
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    bottom: 180px;
-    right: 100px;
+    width: 40%;
+    height: 95%;
     color: rgb(0, 0, 0);
      background-color: white;
      padding: 20px;
@@ -70,11 +78,9 @@ html{
     border: 1px solid  rgb(0, 0, 0);
 }
 .degree{
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    bottom: 80px;
-    left: 100px;
+    width: 40%;
+    height: 95%;
+ 
     color: rgb(0, 0, 0);
      background-color: white;
      padding: 15px;
@@ -83,17 +89,11 @@ html{
     border: 1px solid  rgb(0, 0, 0);
 
 }
-.line{
-    width: 2px;
-    height: 250px;
-    background-color:rgb(87, 87, 217) ;
-    position: absolute;
-    left: 425px;
-    top: 130px;
+
     
    
    
-}
+
 .calender{
     color: rgb(87, 87, 217);
 }
@@ -101,18 +101,29 @@ html{
     color:  rgb(78, 72, 72) ;
 }
 
-.round-1{
-    position: absolute;
-    left: 419px;
-    top: 128px;
+
+
+/* ================================================================================================================ */
+@media(max-width:768px){
+    
+    .school{
+      width: 60%;
+    }
+    .high-school{
+      width: 60%;
+    }
+    .degree{
+      width: 60%;
+    }
 }
-.round-2{
-    position: absolute;
-    left: 419px;
-    top: 250px;
-}
-.round-3{
-    position: absolute;
-    left: 419px;
-    top: 368px;
+@media(max-width:768px){
+    .school{
+      width: 100%;
+    }
+    .high-school{
+      width: 100%;
+    }
+    .degree{
+      width: 100%;
+    } 
 }

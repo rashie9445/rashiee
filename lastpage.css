@@ -1,40 +1,110 @@
-#container7{
-    width: 100%;
-    height: 50vh;
-    background-color:  rgb(87, 87, 217);
-    color: white;
+#container7 {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(87, 87, 217);
+  color: white;
 }
-.last-main{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    gap: 50px;
-    padding-top: 46px;
-    
+
+.last-main {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 50px;
+  padding-top: 46px;
+
 
 }
-.last-left{
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    line-height: 40px;
+
+.last-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 40px;
+  
 }
-.last-center{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
+
+.last-center {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
 
 }
-.last-right{
-    width: 30%;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 8px;
+
+.last-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 8px;
 
 }
-.last-bottom{
-    width: 100%;
+
+.last-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(200, 184, 184);
+}
+
+/* ================================================================================================================ */
+@media(max-width:768px) {
+  .last-right {
+    width: 15%;
+  }
+
+  .last-left {
+    margin-left: 30px;
+  }
+}
+
+@media(max-width:700px) {
+  .last-center {
     display: flex;
+    flex-direction: column;
+  }
+
+  .last-left {
+    margin-left: 30px;
+    font-size: 15px;
+  }
+}
+
+@media(max-width:630px) {
+  .last-left {
+    font-size: 14px;
+
+  }
+}
+
+@media(max-width:425px) {
+  .last-left {
+    font-size: 13px;
+
+  }
+}
+@media(max-width:375px) {
+  .last-main{
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .last-center{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    color: rgb(200, 184, 184);
+    font-size: 10px;
+    gap: 10px;
+    width: 100%;
+   
+  }
+  .last-left {
+   flex-direction: row;
+   justify-content: end;
+   font-size: 13px;
+   gap: 10px;
+   padding-left: 30%;
+
+  }
 }
